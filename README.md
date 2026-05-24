@@ -1,6 +1,6 @@
 # Revit Converter MCP
 
-**AI-powered BIM tool** — convert Revit `.rvt` files to XKT, query model data, and explore building elements through natural language, right inside Claude.
+**AI-powered BIM tool** — convert Revit `.rvt` files to XKT, IFC and DWG, query model data, and explore building elements through natural language, right inside Claude.
 
 Built by [Labs Future](https://www.labsfuture.com) · Powered by the [Model Context Protocol](https://modelcontextprotocol.io)
 
