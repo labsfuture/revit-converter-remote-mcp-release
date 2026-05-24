@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "websiteUrl": "https://www.labsfuture.com",
   "repository": {
-    "type": "git",
+    "source": "github",
     "url": "https://github.com/labsfuture/revit-converter-remote-mcp-release"
   },
   "remotes": [
