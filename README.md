@@ -17,6 +17,7 @@ The **Revit Converter MCP** is a remote MCP server that connects Claude (or any 
 - List and manage models on the server
 - Upload your `.rvt` files by a public URL
 - Convert Revit models to **XKT format** for web-based 3D viewing
+- Export models to **IFC or DWG** for interoperability with other tools
 - Query BIM data in natural language — counts, element types, properties
 - Inspect individual element metadata (materials, dimensions, thermal values, etc.)
 
@@ -34,6 +35,8 @@ No plugins, no Revit installation needed on the client side.
 | `set_current_model`     | Set the active model for subsequent operations      |
 | `convert_revit_to_xkt`  | Convert the current model to XKT for 3D web viewing |
 | `get_conversion_status` | Check the progress of an ongoing conversion         |
+| `export_model`          | Export the model to IFC or DWG format               |
+| `get_export_status`     | Check export progress and get the download link     |
 | `query_model`           | Query BIM data (element counts, types, filters)     |
 | `search_elements`       | Search and retrieve properties of specific elements |
 
@@ -92,7 +95,7 @@ Add the following entry under `mcpServers`:
 
 ### Step 3 — Restart Claude Desktop
 
-After saving the config, restart Claude Desktop. Open **Settings → Connectors** and you should see **revit-converter** listed with 7 tools available.
+After saving the config, restart Claude Desktop. Open **Settings → Connectors** and you should see **revit-converter** listed with 9 tools available.
 
 ![Claude After Config](pics/Claude_AfterConfig.png)
 
@@ -134,6 +137,16 @@ yes, convert rac_basic_sample_project.rvt to xkt
 Claude returns a direct viewer link — open it to see your model rendered in 3D:
 
 ![View XKT](pics/ViewXKT.png)
+
+---
+
+**Export to IFC or DWG**
+
+```
+export the current model to IFC
+```
+
+Claude triggers the export job and checks back automatically — when ready, it returns a direct download link valid for 60 minutes.
 
 ---
 
