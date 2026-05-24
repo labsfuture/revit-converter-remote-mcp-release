@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.labsfuture/revit-converter-remote-mcp-release",
+  "title": "Revit Converter MCP",
+  "description": "Convert Revit files to XKT and query BIM data via natural language inside Claude or any MCP client.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.labsfuture.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labsfuture/revit-converter-remote-mcp-release"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://labsaps-d35810f00db3.herokuapp.com/mcp",
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer {apiKey}"
+        }
+      ],
+      "variables": {
+        "apiKey": {
+          "description": "Your Labs Future API key (dk_... for demo, sk_... for full access). Get one free at labsfuture.com.",
+          "isSecret": true
+        }
+      }
+    }
+  ]
+}
