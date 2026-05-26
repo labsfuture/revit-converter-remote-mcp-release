@@ -186,7 +186,7 @@ Visit [www.labsfuture.com](https://www.labsfuture.com) to:
 
 - [Claude Desktop](https://claude.ai/download) (or any MCP-compatible client)
 - [Node.js](https://nodejs.org) (for `npx mcp-remote`)
-- A [Labs Future](https://www.labsfuture.com) account with an API key
+- [Optional] A [Labs Future](https://www.labsfuture.com) account with an API key
 
 ---
 
